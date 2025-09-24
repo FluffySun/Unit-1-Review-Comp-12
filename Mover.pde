@@ -2,10 +2,7 @@ class Mover { //create a class with 3 variables any class needs
   
   //1. instance variables
   float x, y;
-  //universal variables:
-  float r = random (255);
-  float g = random (255);
-  float b = random (255);
+  float r = random (0, 100);
   
   //2. constructor
   Mover () {
@@ -16,9 +13,9 @@ class Mover { //create a class with 3 variables any class needs
   //3. behaviour functions
   void  show() {
     stroke (0);
-    fill (r,g,b);
+    fill (255);
     strokeWeight (5);
-    circle (x, y, 100);
+    circle (x, y, r);
   }
   
   void act() {
